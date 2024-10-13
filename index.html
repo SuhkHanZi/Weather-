@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        
+        <div class="input-group inp flex-nowrap">
+            <input  id="input" type="text" class="form-control" placeholder="Search For Cities" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+        <button id="button" type="submit" class="btn btn-primary">Search</button>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="temp-info">
+                    <h4 id="name">Pakistan</h4>
+                    <p id="date" style="position: relative;top: -14px;left: 50px;color: #737A85;">2024-10-13 12:35</p>
+                </div>
+                <div class="temp-display">
+                    <h5 id="temprature"></h5>
+                    <div class="main_img">
+                        <img id="florImg" src="" alt="">
+                    </div>
+                </div>
+                <div class="forecast">
+                    <p>Today's Forecast</p>
+                    <div class="tod-forcast">
+                        <div class="first-div">
+                            <span id="time">6:00 PM</span>
+                            <img id="img1" src="" alt="">
+                            <h3 id="first_temp"></h3>
+                        </div>
+                        <div class="first-div">
+                            <span id="time2">9:00 PM</span>
+                            <img id="img2" src="" alt="">
+                            <h3 id="sectemp"></h3>
+                        </div>
+                        <div class="first-div">
+                            <span id="time3">2:00 AM</span>
+                            <img id="img3" src="" alt="">
+                            <h3 id="thrdtemp"></h3>
+                        </div>
+                        <div class="first-div">
+                            <span id="time4">5:00 AM</span>
+                            <img id="img4" src="" alt="">
+                            <h3 id="fourtemp"></h3>
+                        </div>
+                        <div class="first-div">
+                            <span id="time5">8:00 AM</span>
+                            <img id="img5" src="" alt="">
+                            <h3 id="fivtemp"></h3>
+                        </div>
+                        <div class="first-div">
+                            <span id="time6">10:00 AM</span>
+                            <img id="img6" src="" alt="">
+                            <h3 id="sixtemp"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <p>AIR CONDITIONS</p>
+                    <div class="row">
+                        <div class="col-6  air-condition">
+                            <span> <i class="fa-solid fa-temperature-three-quarters"></i></span>
+                            <span>Real Feel</span>
+                            <h3 id="realFeel"></h3>
+                        </div>
+                        <div class="col-6  uv-index">
+                            <span><i class="fa-solid fa-sun"></i></span>
+                            <span>UV INDEX</span>
+                            <h3 id="uvIndex"></h3>
+                        </div>
+                        <div class="col-6  wind">
+                            <span><i class="fa-solid fa-wind"></i></span>
+                            <span>WIND</span>
+                            <h3 id="Wind"></h3>
+                        </div>
+                        <div class="col-6  visibillity">
+                            <span><i class="fa-solid fa-eye"></i></span>
+                            <span>VISIBILITY</span>
+                            <h3 id="visibility"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="fut-forecast">
+                    <p>7-DAYS FORECAST</p>
+                    <div class="prev-cast">
+                        <p>Today</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="prevImgone" src="" alt="">
+                            <span id="firtxt"></span>
+                        </div>
+                        <span id="todTemp"></span>
+                    </div>
+                    <div class="prev-cast">
+                        <p>Sun</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="sunimg" src="" alt="">
+                            <span id="suntxt"></span>
+                        </div>
+                        <span id="sunTemp"></span>
+                    </div>
+                    <div class="prev-cast">
+                        <p>Mon</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="monimg" src="" alt="">
+                            <span id="montxt"></span>
+                        </div>
+                        <span id="monTemp"></span>
+                    </div>
+                    <div class="prev-cast">
+                        <p>Tues</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="tueimg" src="" alt="">
+                            <span id="tuetxt"></span>
+                        </div>
+                        <span id="tueTemp"></span>
+                    </div>
+                    <div class="prev-cast">
+                        <p>Wed</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="wedimg" src="" alt="">
+                            <span id="wedtxt"></span>
+                        </div>
+                        <span id="wedTemp"></span>
+                    </div>
+                    <div class="prev-cast">
+                        <p>Thu</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="thuimg" src="" alt="">
+                            <span id="thutxt"></span>
+                        </div>
+                        <span id="thuTemp"></span>
+                    </div>
+                     <div class="prev-cast">
+                        <p>Fri</p>
+                        <div style="margin-top: -35px;">
+                            <img style="width: 100px;" id="friImg" src="" alt="">
+                            <span id="fritxt"></span>
+                        </div>
+                        <span id="friTemp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

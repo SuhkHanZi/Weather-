@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B131E;
+    color: white;
+}
+
+.temp-info>h4 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.inp>input {
+    background-color: #202B3B;
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.inp>input::placeholder {
+    color: white;
+    /* Change this to any color you like */
+    opacity: 1
+}
+
+.inp>input:focus {
+    background-color: #202B3B;
+    box-shadow: none;
+    color: white;
+}
+
+.temp-display {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.temp-display>h5 {
+    font-size: 50px;
+    font-weight: 900;
+    /* position: absolute; */
+}
+
+.temp-display>span {
+    position: relative;
+    left: 62px;
+    top: 8px;
+}
+
+.forecast {
+    background-color: #202B3B;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.forecast>p {
+    margin-left: 30px;
+}
+
+.tod-forcast {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.first-div {
+    color: white;
+}
+
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.first-div:last-child{
+    border-right: none;
+}
+.first-div img {
+    margin: 10px 0;
+    width: 100px;
+}
+
+
+
+#first_temp {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.first-div {
+    border-right: 1px solid #777773;
+}
+
+.first-div {
+    padding-right: 20px;
+}
+
+.conditions {
+    background-color: #202B3B;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.air-condition {
+    margin-bottom: 30px;
+}
+
+.air-condition>span {
+    color: #9399A2;
+}
+
+#realFeel {
+    font-weight: 800;
+    position: absolute;
+    color: #C4CAD3;
+}
+
+.air-condition>i {
+    position: relative;
+    top: 20px;
+    left: -50px;
+    width: 1px;
+    font-size: 7px;
+}
+
+.uv-index>h3 {
+    font-weight: 800;
+    color: #C4CAD3;
+}
+
+.uv-index>span {
+    color: #9399A2;
+}
+
+.wind>span {
+    color: #9399A2;
+}
+
+.wind>h3 {
+    font-weight: 800;
+    color: #C4CAD3;
+}
+
+.visibillity>span {
+    color: #9399A2;
+}
+
+.visibillity>h3 {
+    font-weight: 800;
+    color: #C4CAD3;
+}
+
+.fut-forecast {
+    background-color: #202B3B;
+    /* height: 200px; */
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.prev-cast:last-child {
+    border-bottom: none;
+}
+
+.main_img {
+    float: right;
+    width: 300px;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: -150px;
+}
+
+.main_img>img {
+    width: 20vh;
+}
+
+.prev-cast {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #777773;
+    margin-top: 50px;
+}
