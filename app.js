@@ -63,8 +63,9 @@ let thuTemp = document.getElementById("thuTemp");
 let friImg = document.getElementById("friImg");
 let fritxt = document.getElementById("fritxt");
 let friTemp = document.getElementById("friTemp");
-
-button.addEventListener("click", function () {
+button.addEventListener("click", fetchWeatherData);
+button.addEventListener("touchstart", fetchWeatherData);
+function fetchWeatherData() {
     // Get the value from the input for the location
     const location = inp.value; // Get location from the input
 
@@ -107,7 +108,7 @@ button.addEventListener("click", function () {
             time4.textContent = result.forecast.forecastday[0].hour[17].time.split(" ")[1];
             time5.textContent = result.forecast.forecastday[0].hour[20].time.split(" ")[1];
             time6.textContent = result.forecast.forecastday[0].hour[23].time.split(" ")[1];
-            
+
             // Update temperatures for those hours
             firstTemp.textContent = `${result.forecast.forecastday[0].hour[9].temp_c}°`;
             secTemp.textContent = `${result.forecast.forecastday[0].hour[11].temp_c}°`;
@@ -153,4 +154,4 @@ button.addEventListener("click", function () {
         .catch((error) => {
             console.error("Error fetching the weather data:", error);
         });
-});
+};
